@@ -3,7 +3,7 @@ import Title from '../components/Title'
 import CartTotal from '../components/cartTotal'
 import { assets} from '../assets/frontend_assets/assets'
 import { ShopContext } from '../context/ShopContext'
-import { data } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import axios from 'axios'
 import { toast } from 'react-toastify'
 import { currency } from '../../../admin/src/App'
@@ -11,6 +11,9 @@ import { currency } from '../../../admin/src/App'
 const PlaceOrder = () => {
   const [method, setMethod] = useState('cod');
   const {navigate, backendUrl, token, cartItems, setCartItems, getCartAmount, delivery_fee, products } = useContext(ShopContext)
+  const location = useLocation();
+  const data = location.state?.data;
+
   
   const [formData, setFormData] = useState({
     firstName:'',
