@@ -1,3 +1,4 @@
+
 {
   "rewrites": [
     {
@@ -8,8 +9,7 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/static",
-      "output": "dist"
+      "use": "@vercel/static"
     }
   ]
 }
