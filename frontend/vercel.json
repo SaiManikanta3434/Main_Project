@@ -9,7 +9,7 @@
     {
       "src": "package.json",
       "use": "@vercel/static",
-      "dest": "dist"
+      "output": "dist"
     }
   ]
 }
