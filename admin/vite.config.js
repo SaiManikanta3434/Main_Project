@@ -6,10 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: './',
   build: {
-    outDir: 'dist',
-    rollupOptions: {
-      external: ['react-toastify', 'react-router-dom']
-    }
+    outDir: 'dist'
   },
   server: {port : 5174}
 })
