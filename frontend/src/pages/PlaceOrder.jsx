@@ -6,7 +6,7 @@ import { ShopContext } from '../context/ShopContext'
 import { useLocation } from 'react-router-dom'
 import axios from 'axios'
 import { toast } from 'react-toastify'
-import { currency } from '../../../admin/src/App'
+import { currency } from '../constants'
 
 const PlaceOrder = () => {
   const [method, setMethod] = useState('cod');
